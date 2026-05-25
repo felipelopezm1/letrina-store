@@ -1,13 +1,97 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-ink: #14110d;
-  --color-surface: #1f1a14;
-  --color-cream: #e8dcc4;
-  --color-muted: #7a6f5c;
-  --color-accent: #ff5a1f;
+  --color-ink: var(--skin-ink);
+  --color-surface: var(--skin-surface);
+  --color-cream: var(--skin-cream);
+  --color-muted: var(--skin-muted);
+  --color-accent: var(--skin-accent);
   --font-sans: var(--font-display);
   --font-mono: var(--font-mono);
+}
+
+:root,
+:root[data-skin="ascii-pit"] {
+  --skin-name: "ASCII PIT";
+  --skin-ink: #10100d;
+  --skin-surface: #191812;
+  --skin-cream: #e8dcc4;
+  --skin-muted: #8b806d;
+  --skin-accent: #ff5a1f;
+  --skin-card-radius: 0px;
+  --skin-button-radius: 0px;
+  --skin-border: 1px;
+  --skin-letter-spacing: -0.06em;
+  --skin-transform: uppercase;
+  --skin-bg: radial-gradient(circle at 20% 10%, rgba(255, 90, 31, 0.13), transparent 26%),
+    linear-gradient(180deg, #10100d, #17130e);
+  --skin-panel-shadow: 12px 12px 0 rgba(255, 90, 31, 0.3);
+}
+
+:root[data-skin="blue-terminal"] {
+  --skin-name: "S4AD BLUE TERMINAL";
+  --skin-ink: #f8f7ef;
+  --skin-surface: #ffffff;
+  --skin-cream: #001ec7;
+  --skin-muted: #2336b0;
+  --skin-accent: #001ec7;
+  --skin-card-radius: 0px;
+  --skin-button-radius: 0px;
+  --skin-border: 2px;
+  --skin-letter-spacing: 0.02em;
+  --skin-transform: uppercase;
+  --skin-bg: linear-gradient(#fbfaf4, #f1f0e8);
+  --skin-panel-shadow: 8px 8px 0 rgba(0, 30, 199, 0.16);
+}
+
+:root[data-skin="soft-type"] {
+  --skin-name: "SOFT TYPE SHOP";
+  --skin-ink: #efede5;
+  --skin-surface: #f8f5ec;
+  --skin-cream: #0d0d0b;
+  --skin-muted: #5b574d;
+  --skin-accent: #ef2638;
+  --skin-card-radius: 18px;
+  --skin-button-radius: 999px;
+  --skin-border: 1px;
+  --skin-letter-spacing: -0.09em;
+  --skin-transform: none;
+  --skin-bg: radial-gradient(circle at 70% 10%, rgba(239, 38, 56, 0.14), transparent 28%),
+    #efede5;
+  --skin-panel-shadow: none;
+}
+
+:root[data-skin="ink-brush"] {
+  --skin-name: "INK BRUSH";
+  --skin-ink: #faf8f0;
+  --skin-surface: #fffdf5;
+  --skin-cream: #171713;
+  --skin-muted: #676056;
+  --skin-accent: #24553d;
+  --skin-card-radius: 6px;
+  --skin-button-radius: 999px;
+  --skin-border: 1px;
+  --skin-letter-spacing: -0.04em;
+  --skin-transform: none;
+  --skin-bg: radial-gradient(circle at 85% 72%, rgba(36, 85, 61, 0.12), transparent 30%),
+    #faf8f0;
+  --skin-panel-shadow: 0 0 0 1px rgba(23, 23, 19, 0.08);
+}
+
+:root[data-skin="gallery-index"] {
+  --skin-name: "GALLERY INDEX";
+  --skin-ink: #e7e6dc;
+  --skin-surface: #f4f2e9;
+  --skin-cream: #12120f;
+  --skin-muted: #5f5d54;
+  --skin-accent: #8fa5ba;
+  --skin-card-radius: 0px;
+  --skin-button-radius: 0px;
+  --skin-border: 1px;
+  --skin-letter-spacing: 0.18em;
+  --skin-transform: uppercase;
+  --skin-bg: linear-gradient(#e7e6dc, #f2f1e9);
+  --skin-panel-shadow: none;
 }
 
 * {
@@ -19,13 +103,13 @@ html {
 }
 
 body {
-  background: #14110d;
-  color: #e8dcc4;
+  background: var(--skin-bg);
+  color: var(--skin-cream);
 }
 
 ::selection {
-  background: #ff5a1f;
-  color: #14110d;
+  background: var(--skin-accent);
+  color: var(--skin-ink);
 }
 
 .noise {
@@ -44,6 +128,44 @@ body {
 
 .sticker {
   clip-path: polygon(2% 8%, 96% 2%, 100% 85%, 91% 100%, 6% 96%, 0 18%);
+}
+
+.skin-panel {
+  border-width: var(--skin-border);
+  border-radius: var(--skin-card-radius);
+  box-shadow: var(--skin-panel-shadow);
+}
+
+.skin-button {
+  border-radius: var(--skin-button-radius);
+}
+
+.skin-title {
+  letter-spacing: var(--skin-letter-spacing);
+  text-transform: var(--skin-transform);
+}
+
+[data-skin="blue-terminal"] .noise,
+[data-skin="gallery-index"] .noise {
+  opacity: 0.07;
+}
+
+[data-skin="soft-type"] .scanlines,
+[data-skin="ink-brush"] .scanlines,
+[data-skin="gallery-index"] .scanlines {
+  opacity: 0.04;
+}
+
+[data-skin="soft-type"] .sticker {
+  clip-path: ellipse(48% 38% at 50% 50%);
+}
+
+[data-skin="ink-brush"] .sticker {
+  clip-path: polygon(12% 4%, 96% 12%, 92% 92%, 4% 78%);
+}
+
+[data-skin="gallery-index"] .sticker {
+  display: none;
 }
 
 .prose-dump p {

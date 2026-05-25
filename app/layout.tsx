@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { GrungeBg } from "@/components/GrungeBg";
 import { Nav } from "@/components/Nav";
 import { StickerLayer } from "@/components/StickerLayer";
+import { ThemeRandomizer } from "@/components/ThemeRandomizer";
 import "./globals.css";
 
 const display = Space_Grotesk({
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html className={`${display.variable} ${mono.variable}`} lang="en">
       <body className="min-h-screen bg-ink text-cream antialiased">
+        <ThemeRandomizer />
         <GrungeBg />
         <StickerLayer />
         <Nav />

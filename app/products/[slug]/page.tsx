@@ -28,7 +28,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <section className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_0.9fr]">
-      <div className="overflow-hidden border border-cream/20 bg-surface">
+      <div className="skin-panel overflow-hidden border border-cream/20 bg-surface">
         <div className="relative aspect-square bg-ink">
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -43,7 +43,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-accent">
             {product.tags.join(" / ")}
           </p>
-          <h1 className="mt-3 text-6xl font-black leading-[0.9] tracking-[-0.06em] sm:text-7xl">
+          <h1 className="skin-title mt-3 text-6xl font-black leading-[0.9] sm:text-7xl">
             {product.name}
           </h1>
           <p className="mt-4 font-mono text-sm text-muted">{product.tagline}</p>
@@ -68,6 +68,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           productSlug={product.slug}
           suggested={product.suggested}
         />
+
+        {product.preview_url ? (
+          <a
+            className="skin-button block border border-accent bg-accent px-5 py-3 text-center font-mono text-xs font-black uppercase tracking-[0.18em] text-ink hover:bg-cream"
+            href={product.preview_url}
+            rel="noreferrer"
+            target="_blank"
+          >
+            test the live previz -&gt;
+          </a>
+        ) : null}
 
         <article className="prose-dump font-mono text-sm leading-7 text-muted">
           {product.description.split("\n\n").map((paragraph) => (

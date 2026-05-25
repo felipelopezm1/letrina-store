@@ -51,7 +51,7 @@ export function PwywInput({
   }
 
   return (
-    <div className="space-y-4 border border-cream/20 bg-surface p-4">
+    <div className="skin-panel space-y-4 border border-cream/20 bg-surface p-4">
       <div>
         <label className="font-mono text-xs uppercase tracking-[0.18em] text-muted">
           Pay what you want (min {formatGBP(minimum)})
@@ -71,7 +71,7 @@ export function PwywInput({
       <div className="flex flex-wrap gap-2">
         {presets.map((preset) => (
           <button
-            className="rounded-full border border-cream/25 px-3 py-1 font-mono text-xs text-cream hover:border-accent hover:text-accent"
+            className="skin-button border border-cream/25 px-3 py-1 font-mono text-xs text-cream hover:border-accent hover:text-accent"
             key={preset}
             onClick={() => setAmount(String(preset / 100))}
             type="button"
@@ -89,7 +89,7 @@ export function PwywInput({
       />
       {error ? <p className="font-mono text-xs text-accent">{error}</p> : null}
       <button
-        className="w-full rounded-full bg-cream px-5 py-3 font-mono text-sm font-black uppercase tracking-[0.18em] text-ink hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+        className="skin-button w-full bg-cream px-5 py-3 font-mono text-sm font-black uppercase tracking-[0.18em] text-ink hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
         disabled={isLoading}
         onClick={checkout}
         type="button"

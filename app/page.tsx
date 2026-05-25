@@ -12,7 +12,7 @@ export default async function Home() {
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-accent">
             software debris / pay once / keep the id
           </p>
-          <h1 className="mt-5 max-w-4xl text-6xl font-black leading-[0.86] tracking-[-0.08em] text-cream sm:text-8xl lg:text-[9.5rem]">
+          <h1 className="skin-title mt-5 max-w-4xl text-6xl font-black leading-[0.86] text-cream sm:text-8xl lg:text-[9.5rem]">
             Letrina Dumping Ground
           </h1>
           <p className="mt-6 max-w-xl font-mono text-sm leading-7 text-muted sm:text-base">
@@ -22,37 +22,36 @@ export default async function Home() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-xs uppercase tracking-[0.16em]">
             <Link
-              className="rounded-full bg-cream px-5 py-3 font-black text-ink hover:bg-accent"
+              className="skin-button bg-cream px-5 py-3 font-black text-ink hover:bg-accent"
               href="/products"
             >
               Browse software
             </Link>
             <Link
-              className="rounded-full border border-cream/30 px-5 py-3 text-cream hover:border-accent hover:text-accent"
+              className="skin-button border border-cream/30 px-5 py-3 text-cream hover:border-accent hover:text-accent"
               href="/access"
             >
               Reuse purchase id
             </Link>
           </div>
         </div>
-        <div className="relative min-h-[420px] border border-cream/20 bg-surface p-4 shadow-[14px_14px_0_rgba(122,111,92,0.25)]">
+        <div className="skin-panel relative min-h-[420px] border border-cream/20 bg-surface p-4">
           <div className="absolute inset-4 border border-cream/10" />
           <div className="relative flex h-full min-h-[390px] items-center justify-center overflow-hidden bg-ink">
             <div className="absolute h-72 w-72 rounded-full border border-cream/20" />
-            <pre className="select-none text-center font-mono text-[10px] leading-[10px] text-cream/80 sm:text-xs sm:leading-3">
-{`       #######
-    ######   ####
-  ####  software  ##
- ###   dump.zip    ###
- ###    £10+       ###
-  ####   no login ####
-    ####       ####
-       ########
-
-   ||||||||||||||||
-   ||||||||||||||||
-   ||| 5 DOWNLOADS
-   ||||||||||||||||`}
+            <pre className="select-none text-left font-mono text-[10px] leading-[10px] text-cream/80 sm:text-xs sm:leading-3">
+{`+------------------------------------------------+
+| LETRINA DUMPING GROUND // SOFTWARE SHELF       |
+|------------------------------------------------|
+| 001  PAY WHAT YOU WANT  >= GBP 10              |
+| 010  NO ACCOUNT         PURCHASE_ID ONLY       |
+| 011  DOWNLOAD LIMIT     5 PER PURCHASE         |
+| 100  PREVIEW MODE       TRY BEFORE REPO DROP   |
++------------------------------------------------+
+        ____        ____        ____
+       / __/___ ___/ / /__ ____/ / /
+      / _// -_) _  / / _ '/ _  /_/ 
+     /_/  \\__/\\_,_/_/\\_,_/\\_,_(_)  `}
             </pre>
           </div>
         </div>

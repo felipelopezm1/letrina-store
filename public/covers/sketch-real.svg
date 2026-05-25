@@ -1,0 +1,20 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#11110f"/>
+  <rect x="56" y="56" width="1088" height="788" stroke="#e8dcc4" stroke-width="4"/>
+  <rect x="96" y="106" width="490" height="320" fill="#e8dcc4"/>
+  <path d="M145 331C205 238 261 220 323 276C386 333 458 222 530 162" stroke="#11110f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="640" y="106" width="420" height="320" fill="#1e1e1a" stroke="#e8dcc4" stroke-width="3"/>
+  <path d="M700 360C733 244 811 173 891 211C956 242 1003 301 1026 372" stroke="#e8dcc4" stroke-width="12" stroke-dasharray="3 22"/>
+  <path d="M96 514H1104" stroke="#e8dcc4" stroke-width="3"/>
+  <text x="96" y="593" fill="#e8dcc4" font-family="monospace" font-size="54" font-weight="900">SKETCH-REAL // MVP</text>
+  <text x="96" y="665" fill="#ff5a1f" font-family="monospace" font-size="30">SKETCH -&gt; PHOTOREAL CINEMATOGRAPHY PLATE</text>
+  <text x="96" y="744" fill="#7a6f5c" font-family="monospace" font-size="28">PREVIEW MODE / LIVE TEST / REPO LATER</text>
+  <g opacity=".25">
+    <path d="M0 0H1200V900H0V0Z" fill="url(#scan)"/>
+  </g>
+  <defs>
+    <pattern id="scan" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="2" height="8" fill="#e8dcc4"/>
+    </pattern>
+  </defs>
+</svg>

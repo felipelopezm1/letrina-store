@@ -14,7 +14,7 @@ export default async function ProductsPage() {
         <p className="font-mono text-xs uppercase tracking-[0.22em] text-accent">
           available software
         </p>
-        <h1 className="mt-4 text-6xl font-black leading-none tracking-[-0.06em]">
+        <h1 className="skin-title mt-4 text-6xl font-black leading-none">
           Pick through the pile.
         </h1>
         <p className="mt-5 font-mono text-sm leading-7 text-muted">

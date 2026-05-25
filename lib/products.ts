@@ -16,6 +16,8 @@ export const productSchema = z.object({
   storage_path: z.string(),
   file_name: z.string(),
   file_size: z.number().int().optional(),
+  preview_url: z.string().url().optional(),
+  repo_url: z.string().url().optional(),
   version: z.string().default("0.1.0"),
   is_published: z.boolean().default(true),
 });

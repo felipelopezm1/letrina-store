@@ -1,0 +1,18 @@
+{
+  "slug": "sketch-real",
+  "name": "sketch-real // cinematography asset engine",
+  "tagline": "Sketch-to-photoreal previz plates for cinematography, powered by a tight production brief.",
+  "description": "sketch-real is a cinematography asset engine for turning rough sketches into photoreal production plates. Drop a sketch, fill the script-style brief, choose camera and output settings, then generate visual options for review.\n\nThis listing is in preview/test mode for now. You can open the live MVP and try the product architecture before the repo, installer, or production package is attached.",
+  "min_price": 1500,
+  "suggested": 2500,
+  "cover_url": "/covers/sketch-real.svg",
+  "gallery": ["/covers/sketch-real.svg"],
+  "tags": ["previz", "ai", "cinematography"],
+  "tech_stack": ["Next.js", "fal.ai", "Vercel Blob", "Image Generation"],
+  "storage_path": "templates/sketch-real.zip",
+  "file_name": "sketch-real-preview.zip",
+  "file_size": 1024,
+  "preview_url": "https://sketch-real-mvp.vercel.app/",
+  "version": "0.1.0-preview",
+  "is_published": true
+}

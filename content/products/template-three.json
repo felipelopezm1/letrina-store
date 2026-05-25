@@ -1,0 +1,17 @@
+{
+  "slug": "web-component-pack",
+  "name": "Web Component Pack",
+  "tagline": "Interface bits with a dithered edge and no corporate aftertaste.",
+  "description": "Web Component Pack is the third template listing. It stands in for a future front-end component product: cards, inputs, landing sections, and motion details.\n\nIt ships as a placeholder ZIP for now, but the catalog metadata, pricing, checkout, and download limits are production-shaped.",
+  "min_price": 1200,
+  "suggested": 2000,
+  "cover_url": "/covers/web-component-pack.svg",
+  "gallery": ["/covers/web-component-pack.svg"],
+  "tags": ["components", "frontend"],
+  "tech_stack": ["React", "CSS", "Design System"],
+  "storage_path": "templates/web-component-pack.zip",
+  "file_name": "web-component-pack.zip",
+  "file_size": 1024,
+  "version": "0.1.0",
+  "is_published": true
+}

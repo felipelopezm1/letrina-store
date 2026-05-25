@@ -1,0 +1,17 @@
+{
+  "slug": "cli-toy-beta",
+  "name": "CLI Toy Beta",
+  "tagline": "A tiny terminal utility bundle for scripts, generators, and mischief.",
+  "description": "CLI Toy Beta is a placeholder drop for future command-line software. It frames the product page around utilities, readme-first distribution, and simple one-shot installs.\n\nThe current ZIP is intentionally small and disposable. Replace it with a real release artifact once the repo is ready.",
+  "min_price": 1000,
+  "suggested": 1800,
+  "cover_url": "/covers/cli-toy-beta.svg",
+  "gallery": ["/covers/cli-toy-beta.svg"],
+  "tags": ["cli", "utility"],
+  "tech_stack": ["Node.js", "TypeScript", "Shell"],
+  "storage_path": "templates/cli-toy-beta.zip",
+  "file_name": "cli-toy-beta.zip",
+  "file_size": 1024,
+  "version": "0.1.0",
+  "is_published": true
+}

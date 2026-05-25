@@ -1,0 +1,16 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#14110d"/>
+  <circle cx="604" cy="421" r="252" fill="#1f1a14" stroke="#e8dcc4" stroke-width="6"/>
+  <path d="M337 282L485 421L337 560" stroke="#ff5a1f" stroke-width="42" stroke-linecap="square" stroke-linejoin="bevel"/>
+  <path d="M536 590H821" stroke="#e8dcc4" stroke-width="42" stroke-linecap="square"/>
+  <g opacity="0.32">
+    <path d="M0 0H1200V900H0V0Z" fill="url(#grid)"/>
+  </g>
+  <text x="80" y="116" fill="#e8dcc4" font-family="monospace" font-size="56" font-weight="900">CLI TOY BETA</text>
+  <text x="80" y="805" fill="#7a6f5c" font-family="monospace" font-size="32">TERMINAL UTILITY / NO LOGIN / 5 DL</text>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#e8dcc4" stroke-width="2"/>
+    </pattern>
+  </defs>
+</svg>

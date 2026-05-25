@@ -1,0 +1,20 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#1f1a14"/>
+  <rect x="94" y="112" width="1012" height="676" fill="#14110d" stroke="#e8dcc4" stroke-width="6"/>
+  <rect x="160" y="184" width="390" height="234" fill="#e8dcc4"/>
+  <rect x="650" y="184" width="296" height="94" fill="#ff5a1f"/>
+  <rect x="650" y="322" width="390" height="46" fill="#7a6f5c"/>
+  <rect x="650" y="398" width="332" height="46" fill="#7a6f5c"/>
+  <rect x="160" y="496" width="880" height="192" fill="#e8dcc4"/>
+  <g opacity="0.5">
+    <path d="M0 0H1200V900H0V0Z" fill="url(#dither)"/>
+  </g>
+  <text x="156" y="626" fill="#14110d" font-family="monospace" font-size="58" font-weight="900">WEB COMPONENT PACK</text>
+  <text x="156" y="710" fill="#14110d" font-family="monospace" font-size="30">CARDS / INPUTS / LANDING BITS</text>
+  <defs>
+    <pattern id="dither" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#14110d"/>
+      <circle cx="9" cy="8" r="1.5" fill="#14110d"/>
+    </pattern>
+  </defs>
+</svg>

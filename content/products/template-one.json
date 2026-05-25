@@ -1,0 +1,17 @@
+{
+  "slug": "starter-kit-alpha",
+  "name": "Starter Kit Alpha",
+  "tagline": "A crunchy starter bundle for shipping odd little web tools fast.",
+  "description": "Starter Kit Alpha is the first placeholder software dump: a compact web app foundation with file structure notes, UI primitives, and deploy notes.\n\nUse it as a test product while the real repos are prepared. The download is a small placeholder ZIP so checkout, receipt, purchase ID access, and signed downloads can be verified end-to-end.",
+  "min_price": 1000,
+  "suggested": 1500,
+  "cover_url": "/covers/starter-kit-alpha.svg",
+  "gallery": ["/covers/starter-kit-alpha.svg"],
+  "tags": ["template", "web"],
+  "tech_stack": ["Next.js", "Tailwind", "Vercel"],
+  "storage_path": "templates/starter-kit-alpha.zip",
+  "file_name": "starter-kit-alpha.zip",
+  "file_size": 1024,
+  "version": "0.1.0",
+  "is_published": true
+}

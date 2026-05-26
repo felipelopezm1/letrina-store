@@ -1,11 +1,15 @@
 import Link from "next/link";
+import { LetrinaLogo } from "@/components/LetrinaLogo";
 
 export function Footer() {
   return (
     <footer className="relative z-20 border-t border-cream/15 bg-ink px-4 py-10 font-mono text-xs text-muted sm:px-6">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1fr_2fr_1fr]">
         <div>
-          <p className="text-cream">Letrina Dumping Ground</p>
+          <div className="flex items-center gap-3 text-cream">
+            <LetrinaLogo className="size-10 border border-cream/20 bg-surface p-1" />
+            <p>Letrina Dumping Ground</p>
+          </div>
           <p className="mt-2">One-time software drops, no accounts, no ceremony.</p>
         </div>
         <p className="max-w-xl">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LetrinaLogo } from "@/components/LetrinaLogo";
 import { ProductCarousel } from "@/components/ProductCarousel";
 import { getLocalProducts } from "@/lib/products";
 
@@ -9,9 +10,12 @@ export default async function Home() {
     <div>
       <section className="mx-auto grid min-h-[76vh] max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <p className="font-mono text-xs uppercase tracking-[0.22em] text-accent">
-            software debris / pay once / keep the id
-          </p>
+          <div className="flex items-center gap-3">
+            <LetrinaLogo className="size-12 border border-cream/25 bg-surface p-1" />
+            <p className="font-mono text-xs uppercase tracking-[0.22em] text-accent">
+              software debris / pay once / keep the id
+            </p>
+          </div>
           <h1 className="skin-title mt-5 max-w-4xl text-6xl font-black leading-[0.86] text-cream sm:text-8xl lg:text-[9.5rem]">
             Letrina Dumping Ground
           </h1>
